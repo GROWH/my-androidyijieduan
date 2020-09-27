@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import "public.css";
+header {
+  display: flex;
+  height: 0.85rem;
+  background-color: white;
+  padding: 0.43rem 0.23rem 0 0.24rem;
+  justify-content: space-between;
+  align-items: center;
+}
+header .le img {
+  width: 0.15rem;
+  height: 0.32rem;
+}
+header .cen a {
+  display: block;
+  background: url("../img/index_images/logo.jpg") no-repeat;
+  width: 1.47rem;
+  height: 0.33rem;
+  text-indent: -99.99rem;
+  overflow: hidden;
+  background-size: 1.47rem 0.33rem;
+}
+header .ri {
+  width: 0.55rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .ri span {
+  width: 0.12rem;
+  height: 0.12rem;
+  background-color: black;
+  border-radius: 50%;
+}
+.sousuo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.2rem;
+  width: 7.5rem;
+  background-color: white;
+}
+.sousuo input {
+  margin: 0 auto;
+  width: 6.26rem;
+  height: 0.8rem;
+  background-color: #f26b11;
+  border-radius: 0.37rem;
+  font-size: 0.26rem;
+}
+.sousuo input::placeholder {
+  color: white;
+  padding-left: 0.2rem;
+  text-align: center;
+}
+.sousuo img {
+  position: absolute;
+  top: 0.5rem;
+  left: 2.8rem;
+  width: 0.26rem;
+  height: 0.27rem;
+}
+.type {
+  height: 9.72rem;
+  background-color: white;
+  border-bottom: 0.01rem solid #ccc;
+  padding: 0 0.3rem;
+}
+.type .type1 {
+  display: flex;
+  height: 2.02rem;
+  border-bottom: 0.01rem solid #ccc;
+}
+.type .type1 .type1_le {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.type .type1 .type1_le img {
+  width: 1.47rem;
+  height: 1.6rem;
+}
+.type .type1 .type1_ri {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.type .type1 .type1_ri span:nth-child(1) {
+  font-size: 0.26rem;
+  color: #323232;
+  line-height: 0.4rem;
+}
+.type .type1 .type1_ri span:nth-child(2) {
+  font-size: 0.24rem;
+  color: #e3393c;
+}
+.type .type1 .type1_ri span:nth-child(3) {
+  font-size: 0.22rem;
+  color: #999999;
+}

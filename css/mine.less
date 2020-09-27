@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import "./public.css";
+
+@base:100;
+// 头像部分开始
+.head{
+    display: flex;
+    justify-content: space-between;
+    height: 200rem / @base;
+    background-color: #f26b11;
+    padding: 0 30rem / @base; 
+    .head_le{
+        width: 33%;
+        // background-color: pink;
+        .head_le1{
+            // background-color: gold;
+            margin-top: 20rem / @base;
+            width: 150rem / @base;
+            height: 150rem / @base;          
+            img{
+                width: 150rem / @base;
+                height: 150rem / @base;
+                border-radius: 50%; 
+                border: 4rem / @base solid white;
+            }
+        }
+        .head_le2{
+            margin-top: 70rem / @base;
+            .p1{
+                font-size: 28rem / @base;
+                color: white;
+                margin-bottom: 10rem / @base;
+            }
+            .p2{
+                font-size: 20rem / @base;
+                color: #161d23;
+            }
+        }
+    }
+    .head_ri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160rem / @base;
+        height: 72rem / @base;
+        border-radius: 4%;
+        background-color: white;
+        font-size: 24rem / @base;
+        color: #f26b11;
+        margin-top: 70rem / @base;
+    }
+}
+// 全部订单开始
+.order{
+    height: 140rem / @base;
+    background-color: white;
+    padding: 0 30rem / @base; 
+    margin-bottom: 20rem / @base;
+    ul{
+        height: 140rem / @base;
+        display: flex;
+        justify-content: space-between;
+        // background-color: pink;
+        align-items: center;
+        padding: 0rem / @base 68rem / @base 0 40rem / @base;
+        li{
+            height: 86rem / @base;
+            // background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                margin-top: 10rem / @base;
+                font-size: 22rem / @base;
+                color: #7f7f7f;
+            }
+            img{
+                width: 34rem / @base;
+                height: 34rem / @base;  
+            }
+        }
+    }
+}
+// 地址管理开始
+.address{
+    height: 712rem / @base;
+    background-color: white;
+    border-bottom: 1rem / @base solid #ccc;
+    .address1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 112rem / @base;
+        border-bottom: 1rem / @base solid #ccc;
+        padding: 0 30rem / @base; 
+        .address1_le{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img{
+                width: 36rem / @base;
+                height: 40rem / @base;
+            }
+            p{
+                font-size: 22rem / @base;
+                color: #626262;
+                margin-left: 20rem / @base;
+            }
+        }
+        .address1_ri{
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 20rem / @base;
+                color: #f66200;
+                margin-right: 20rem / @base;
+            }
+            img{
+                width: 19rem / @base;
+                height: 26rem / @base;
+            }
+        }
+    }
+}

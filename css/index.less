@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+@import "./public.css";
+// 页面头部开始
+@base:100;
+header {
+    display: flex;
+    height: 85rem / @base;
+    background-color: white;
+    padding: 43rem / @base 23rem / @base 0 24rem / @base;
+    justify-content: space-between;
+    align-items: center;
+    .logo a {
+        display: block;
+        background: url("../img/index_images/logo.jpg") no-repeat;
+        width: 147rem / @base;
+        height: 33rem / @base;
+        text-indent: -9999rem / @base;
+        overflow: hidden;
+        background-size: 147rem / @base 33rem / @base;
+        // font-size: 0rem;
+    }
+    .search {
+        input {
+            width: 305rem / @base;
+            height: 39rem / @base;
+            background-color: #eee;
+            text-align: center;
+            border-radius:3%;
+        }
+    }
+    .set {
+        width: 55rem / @base;
+        display: flex;
+        justify-content: space-between;
+        span {
+            width: 12rem / @base;
+            height: 12rem / @base;
+            background-color:#010101 ;
+            border-radius: 50%;
+        }
+    }
+}
+// 页面头部结束
+// 导航栏开始
+nav {
+    height: 76rem / @base;
+    width: 750rem / @base;
+    border-top: 1px solid #ccc;
+    background-color: white; 
+    ul{
+         display: flex;
+         justify-content: space-around;
+         height: 76rem / @base;
+         line-height: 76rem / @base;
+         text-align: center;
+         font-size: 26rem / @base;
+         color:#1d1d1d ;
+        //  background-color: indigo;
+         li{
+            height: 76rem / @base; 
+            // background-color: yellowgreen;       
+            img {
+                vertical-align: middle;
+                width: 35rem / @base;
+                height: 21rem / @base;
+            }
+            &:hover{ 
+                border-bottom: 5rem / @base solid #ff0039;  
+                color: #ff0039; 
+            }
+        }
+    }
+}
+// 导航栏结束
+// 大图部分开始
+.banner{
+    height: 290rem / @base;
+    background: url("../img/index_images/banner.jpg") no-repeat;
+    background-size: 790rem / @base 290rem / @base;;
+}
+// 大图部分结束
+// 限时抢购部分开始
+.xianshi{
+    height: 180rem / @base;
+    background-color: white;
+    ul{
+        height: 180rem / @base;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            width: 20%;
+            height: 130rem / @base;
+            // background-color: #ff0039;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 64rem / @base;
+                height: 62rem / @base;
+                background-size: 64rem / @base 62rem / @base ; 
+            }
+            p{
+                margin-top: 18rem / @base;
+                font-size: 26rem / @base;
+                color: #666;
+            }
+        }
+    }
+}
+// 限时抢购部分结束
+// 限时秒杀部分开始
+.miaosha{
+    margin: 30rem / @base 0;
+    // height: 365rem / @base;
+    background-color: white;
+    padding-top:15rem / @base;
+    display: flex;
+    .miaosha_left{
+        position: relative;
+        width: 378rem / @base;
+        height: 365rem / @base;
+        border-right: 1px solid #ccc;
+        padding-left: 20rem / @base;
+        
+        p{
+            font-size: 30rem / @base;
+        }
+        p:first-child{
+            font-size: 28rem / @base;
+            color: #fd3b91;
+
+        }
+        p:nth-child(2){
+            font-size: 22rem / @base;
+            color: #828282;
+            margin: 10rem / @base 0;
+        }
+        span{
+            display: inline-block;
+            width: 40rem / @base;
+            height: 40rem / @base;
+            line-height:40rem / @base ;
+            background-color: black;
+            border-radius: 5rem / @base;
+            font-size: 20rem / @base;
+            color: white;
+            text-align: center;
+            margin-right: 8rem / @base;
+        }
+        span:last-child{
+            width: 96rem / @base;
+            height: 40rem / @base;
+            background: url("../img/index_images/bg.jpg") no-repeat;
+            background-size: 96rem / @base 40rem / @base ;
+            font-size: 24rem / @base;
+            color: black;
+           margin-left: 10rem / @base;
+           
+        }
+        p>img{
+            width: 33rem / @base;
+            height: 31rem / @base;
+        }
+        .tu{
+            width: 236rem / @base;
+            height: 200rem / @base; 
+           margin-top: 20rem / @base;
+            margin-left: 60rem / @base;
+        }
+       .tu>img{
+            width: 236rem / @base;
+            height: 200rem / @base; 
+        }
+        b{
+            position: absolute;
+            right: 30rem / @base;
+            bottom: 30rem / @base;
+            display: inline-block;
+            width: 85rem / @base;
+            height: 85rem / @base;
+            line-height: 85rem / @base;
+            text-align: center;
+            background-color: #ff327a;
+            border-radius: 50%;
+            font-size: 22rem / @base;
+            color: white;
+        }
+
+    }
+    .miaosha_right{
+        width: 372rem / @base;
+        height: 365rem / @base;
+        display: flex;
+        flex-wrap: wrap;
+        .con{
+            width: 44%;
+            height: 50%;    
+            // background-color: pink;
+            padding-left: 20rem / @base;
+           
+
+            span{
+                display: inline-block;
+                width: 33rem / @base;
+                height: 25rem / @base; 
+                line-height: 25rem / @base; 
+                text-align: center;
+                background-color:#fd3b91 ;
+                font-size: 18rem / @base;
+                color: white;
+                margin-left: 10rem / @base ;
+            }
+            p:first-child{
+                font-size: 28rem / @base;
+                color: #fd3b91;
+            } 
+            p:nth-child(2){
+                font-size: 22rem / @base;
+                color: #828282;
+                margin: 10rem / @base 0;
+            }
+            .im1{
+                width: 93rem / @base;
+                height: 32rem / @base;
+                margin-top: 20rem / @base;
+            } 
+            .im2{
+                display: block;
+                width: 128rem / @base;
+                height: 178rem / @base;
+                margin: 0 auto;
+            } 
+            .im3{
+                display: block;
+                width: 64rem / @base;
+                height: 102rem / @base;
+                margin: 0 auto;
+            } 
+            .im4{
+                display: block;
+                width: 104rem / @base;
+                height: 88rem / @base;
+                margin: 0 auto;
+                margin-top: 30rem / @base;
+            } 
+        }
+        .c1,.c2{
+            border-bottom: 1rem / @base solid #ccc;
+        }
+        .c3{
+            border-right: 1rem / @base solid #ccc;
+        }
+    }
+}
+// 限时秒杀部分结束
+//导航图片部分开始 
+.bar{
+    margin-bottom: 30rem / @base;
+    img{
+        width: 750rem / @base;
+        height: 190rem / @base;
+    }
+}
+//导航图片部分结束
+// 热门推荐开始
+.content{
+    height: 1102rem / @base;
+    background-color: white;
+    border-bottom: 1rem / @base solid #ccc;
+    .remen{
+        width:710rem / @base;
+        // height: 70rem / @base;
+        padding: 20rem / @base 0;
+        margin:0 auto;
+        ul{
+            display: flex;
+            justify-content:center;
+            height: 68rem / @base;
+            // background-color: yellowgreen;  
+            li{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 25%;
+                height: 68rem / @base;
+                border: 1rem / @base solid #ccc; 
+                font-size: 26rem / @base;
+                color: #0f0f0f;
+                &:hover{
+                    color: white; 
+                    background-color:#f26b11;
+                    border: none;
+                }      
+            }
+        }
+    }
+    .list{
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        width:710rem / @base;
+        height:300rem / @base;
+        margin: 0 auto;
+        margin-bottom: 30rem / @base;
+        box-shadow:0rem / @base 0rem / @base 10rem / @base #ccc;
+       .li_left{
+           width: 290rem / @base;
+           height:300rem / @base;
+           img{
+            display: block;
+            margin: auto;
+            margin-top: 50rem / @base;
+            width: 216rem / @base;
+            height:220rem / @base;
+           }
+       } 
+       .li_right{
+        width: 420rem / @base;
+        height:300rem / @base;
+        // background-color: pink;
+        line-height: 70rem / @base;;
+       }
+       p:first-child{
+           font-size: 30rem / @base;
+           color: #272727;
+           margin-top: 10rem / @base;
+       }
+       p:nth-child(2){
+        font-size: 24rem / @base;
+        color: #c82c2d;
+       }
+       p:nth-child(3){
+        font-size: 22rem / @base;
+        color: #929292;
+       }
+       p:nth-child(4){
+        width: 164rem / @base;
+        height: 52rem / @base;
+        line-height: 52rem / @base;
+        background-color: #f26b11;
+        text-align: center;
+        border-radius:4%;
+        font-size: 24rem / @base;
+        color: white;
+       }
+    }
+}
+// 热门推荐结束

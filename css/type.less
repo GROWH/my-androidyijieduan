@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+@import "./public.css";
+@base:100;
+// 头部三列
+header {
+    display: flex;
+    height: 85rem / @base;
+    background-color: white;
+    padding: 43rem / @base 23rem / @base 0 24rem / @base;
+    justify-content: space-between;
+    align-items: center;
+    .le{
+       img{
+        width: 15rem / @base;
+        height: 32rem / @base;
+       }
+    }
+    .cen a {
+        display: block;
+        background: url("../img/index_images/logo.jpg") no-repeat;
+        width: 147rem / @base;
+        height: 33rem / @base;
+        text-indent: -9999rem / @base;
+        overflow: hidden;
+        background-size: 147rem / @base 33rem / @base;
+        // font-size: 0rem;
+    }
+    .ri{
+        width: 55rem / @base;
+        display: flex;
+        justify-content: space-between;
+        span {
+            width: 12rem / @base;
+            height: 12rem / @base;
+            background-color:black;
+            border-radius: 50%;
+        }
+    }
+}
+//搜索框开始
+.sousuo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120rem / @base;
+    width: 750rem / @base;
+    background-color:white;  
+    input{        
+        margin: 0 auto;
+        width: 626rem / @base; 
+        height: 80rem / @base;
+        background-color: #f26b11;
+        border-radius: 37rem / @base;  
+        font-size: 26rem / @base;  
+        &::placeholder{
+            color: white;
+            padding-left: 20rem / @base;
+            text-align: center;}
+        }
+        img{
+            position: absolute;
+            top:50rem / @base;
+            left: 280rem / @base;
+            width: 26rem / @base; 
+            height: 27rem / @base;
+        }        
+}
+// 类型列表开始
+.type{
+    height: 972rem / @base;
+    background-color: white;
+    border-bottom: 1rem / @base solid #ccc;
+    padding: 0 30rem / @base; 
+    .type1{
+        display: flex;
+        height: 202rem / @base;
+        border-bottom: 1rem / @base solid #ccc;
+        .type1_le{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 147rem / @base;
+                height: 160rem / @base;
+            }
+        }
+        .type1_ri{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            span:nth-child(1){
+                font-size: 26rem / @base;
+                color:#323232;
+                line-height: 40rem / @base;
+            }
+            span:nth-child(2){
+                font-size: 24rem / @base;
+                color:#e3393c;
+            }
+            span:nth-child(3){
+                font-size: 22rem / @base;
+                color:#999999;
+            }
+        }
+    }
+}

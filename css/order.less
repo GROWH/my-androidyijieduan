@@ -1,0 +1,230 @@
+@charset "utf-8";
+@import "./public.css";
+@base:100;
+
+//  收货人信息部分开始
+.message{
+    max-height: 150rem / @base;
+    padding: 0 30rem / @base; 
+    font-size: 24rem / @base;
+    color: #626262;
+    background-color: white;
+    padding-top: 10rem / @base;
+    .message_le{
+        width: 90%;
+        line-height: 40rem / @base;
+    }
+    .message_ri{
+        padding-top:40rem / @base ;
+        img{
+            width: 19rem / @base;
+            height: 26rem /@base;
+        }
+    }
+}
+// 订单详情开始
+.order_detail{
+    background-color: white;
+    margin-top: 10rem / @base;
+    margin-bottom: 10rem / @base;
+    .order1{
+        max-height: 120rem / @base; 
+        padding: 0 30rem / @base; 
+        // background-color: pink;
+        padding-top:10rem / @base ;
+        .order1_le{
+            max-height: 120rem / @base; 
+            img{
+                width: 100rem / @base;
+                height: 100rem / @base; 
+            }   
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            line-height: 50rem / @base;
+            margin-left:20rem / @base ;
+            .s1{
+                font-size: 24rem / @base;
+                color: #5d5d5d;
+            }
+            .s2{
+                font-size: 24rem / @base;
+                color: #adadad;
+            }
+        }
+        .order1_ri{
+            max-height: 120rem / @base; 
+            span{
+                font-size: 28rem / @base;
+                color: #e02b34;
+                line-height: 110rem / @base ;
+            }
+        }
+    }
+    .order2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 135rem / @base;
+        border-bottom: 1rem / @base solid #ccc; 
+        padding: 0 30rem / @base; 
+        background-color: white;
+        .order2_le{
+            span{
+                font-size: 24rem / @base;
+                color: #636363;
+            }
+        }
+        .order2_ri{
+            span{
+                display: inline-block;
+                width: 74rem / @base;
+                height: 64rem / @base;
+                line-height: 64rem / @base;
+                text-align: center;  
+                border: 1rem / @base solid #515151;
+                border-radius: 4%;   
+                font-size: 24rem / @base;  
+                color: #515151;         
+            }
+            .s2{
+                padding: 0 10rem / @base;
+                margin: 0 5rem / @base;
+            }
+        }
+    }
+    .order3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 98rem / @base;
+        background-color: white;
+        // background-color: pink;
+        padding: 0 30rem / @base;
+        font-size: 24rem / @base;
+        color: #636363;         
+   }
+}
+// 优惠券部分开始
+.order4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 98rem / @base;
+    background-color: white;
+    // background-color: pink;
+    padding: 0 30rem / @base;
+    font-size: 24rem / @base;
+    color: #636363;         
+}
+// 使用积分部分开始
+.order5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 98rem / @base;
+    background-color: white;
+    // background-color: pink;
+    padding: 0 30rem / @base;
+    .order5_le{
+        span{
+            font-size: 24rem / @base;
+            color: #636363; 
+        }
+    } 
+    .order5_ri{
+        span{
+            display: inline-block;
+            line-height: 72rem / @base;
+            text-align: center; 
+            font-size: 22rem / @base; 
+        }
+        .s1{
+            width: 150rem / @base;
+            height: 72rem / @base;
+            color: #e7e7e7; 
+            border: 1rem / @base solid #d9d9d9;
+            border-radius: 4%;   
+        }
+        .s2{
+            width: 72rem / @base;
+            height: 72rem / @base;
+            color: white; 
+            background-color: #f26b11;
+            border-radius: 4%; 
+            margin: 0 5rem / @base;  
+        }
+        .s3{
+            color: #989898;  
+            .s4{
+                color: #dc3549; 
+            } 
+        }
+    }     
+}    
+//提交订单部分开始
+.money{
+    background-color: white;
+    padding: 0 30rem / @base;
+    border-bottom: 1rem / @base solid #ccc;
+    // height: 110rem / @base;
+    .money_top{
+        display: flex;
+        justify-content: space-between;
+        height: 260rem / @base;
+        border-bottom: 1rem / @base solid #ccc;
+        line-height: 46rem / @base;
+        .money_top_le{
+            display: flex;
+            flex-direction: column;          
+            span{
+                font-size: 24rem / @base;
+                color: #5e5e5e;
+            }
+        }
+        .money_top_ri{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            span{
+                font-size: 20rem / @base;
+                color: #d02537; 
+            }
+        }
+    }
+    .money_cen{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 132rem / @base;
+        .s1{
+            font-size: 34rem / @base;
+            color: #5f5f5f;
+        }
+        .s2{
+            font-size: 30rem / @base;
+            color: #ed3442;
+        }
+    }
+    .money_bot{
+        width: 750rem / @base;
+        height: 120rem / @base;
+        // margin:0 auto;
+        span{
+            display: block;
+            height: 110rem / @base;
+            line-height: 110rem / @base;
+            width: 356rem / @base;
+            font-size:28rem / @base;
+            color: white;
+            background-color: #f26b11;
+            border-radius: 4%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+
+
+}

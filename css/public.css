@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "normalize.css";
+@import "reset.css";
+body {
+  background-color: #f1f1f1;
+  font-size: 0.12rem;
+  line-height: 1;
+  font-family: "微软雅黑";
+}
+.page {
+  max-width: 7.5rem;
+  margin: 0 auto;
+}
+
+
+
+header {
+  display: flex;
+  height: 0.85rem;
+  background-color: #f26b11;
+  padding: 0.43rem 0.23rem 0 0.24rem;
+  justify-content: space-between;
+  align-items: center;
+}
+header .le img {
+  width: 0.2rem;
+  height: 0.33rem;
+}
+header .cen {
+  font-size: 0.32rem;
+  color: white;
+}
+header .ri {
+  width: 0.55rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .ri span {
+  width: 0.12rem;
+  height: 0.12rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+
+footer {
+  height: 1.2rem;
+  background-color: white;
+}
+footer ul {
+  height: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 0.68rem 0 0.4rem;
+}
+footer ul li {
+  height: 0.86rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li p {
+  margin-top: 0.1rem;
+  font-size: 0.2rem;
+  color: #7f7f7f;
+}
+footer ul li img {
+  width: 0.56rem;
+  height: 0.53rem;
+}

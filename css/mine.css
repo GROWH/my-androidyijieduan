@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import "public.css";
+.head {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  background-color: #f26b11;
+  padding: 0 0.3rem;
+}
+.head .head_le {
+  width: 33%;
+}
+.head .head_le .head_le1 {
+  margin-top: 0.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.head .head_le .head_le1 img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 0.04rem solid white;
+}
+.head .head_le .head_le2 {
+  margin-top: 0.7rem;
+}
+.head .head_le .head_le2 .p1 {
+  font-size: 0.28rem;
+  color: white;
+  margin-bottom: 0.1rem;
+}
+.head .head_le .head_le2 .p2 {
+  font-size: 0.2rem;
+  color: #161d23;
+}
+.head .head_ri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.6rem;
+  height: 0.72rem;
+  border-radius: 4%;
+  background-color: white;
+  font-size: 0.24rem;
+  color: #f26b11;
+  margin-top: 0.7rem;
+}
+.order {
+  height: 1.4rem;
+  background-color: white;
+  padding: 0 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.order ul {
+  height: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 0.68rem 0 0.4rem;
+}
+.order ul li {
+  height: 0.86rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order ul li p {
+  margin-top: 0.1rem;
+  font-size: 0.22rem;
+  color: #7f7f7f;
+}
+.order ul li img {
+  width: 0.34rem;
+  height: 0.34rem;
+}
+.address {
+  height: 7.12rem;
+  background-color: white;
+  border-bottom: 0.01rem solid #ccc;
+}
+.address .address1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.12rem;
+  border-bottom: 0.01rem solid #ccc;
+  padding: 0 0.3rem;
+}
+.address .address1 .address1_le {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.address .address1 .address1_le img {
+  width: 0.36rem;
+  height: 0.4rem;
+}
+.address .address1 .address1_le p {
+  font-size: 0.22rem;
+  color: #626262;
+  margin-left: 0.2rem;
+}
+.address .address1 .address1_ri {
+  display: flex;
+  align-items: center;
+}
+.address .address1 .address1_ri span {
+  font-size: 0.2rem;
+  color: #f66200;
+  margin-right: 0.2rem;
+}
+.address .address1 .address1_ri img {
+  width: 0.19rem;
+  height: 0.26rem;
+}

@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import "./public.css";
+
+@base:100;
+// 内容区域开始
+.cont{
+    height: 1264rem / @base;
+    background-color: white;
+    .cont_le{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 1050rem / @base;
+        // background-color: pink;
+        ul{
+            height: 1050rem / @base;
+            li{
+                display: flex;
+                align-items: center;
+                height: 116rem / @base;
+                font-size: 24rem / @base;
+                color: #676767;
+                span {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 30rem / @base;
+                    height: 50rem / @base;
+                    // background-color: aquamarine;
+                    border-left: 8rem / @base solid transparent;
+                }
+                &:hover span{
+                    color: #f26b11;
+                    border-left: 8rem / @base solid #f26b11;
+                }
+            }
+        }
+    }
+    .cont_ri{
+        width: 72%;
+        height: 1050rem / @base;
+        padding: 0 30rem / @base; 
+        // background-color: goldenrod;
+        .cont_ri_top{
+            height: 128rem / @base;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .s1{
+                font-size: 24rem / @base;
+                color: #454545;
+            }
+            .s2{
+                font-size: 24rem / @base;
+                color: #666;
+            }
+        }
+        .cont_ri_bot{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            // background-color: yellowgreen;
+            .cont_ri_bot1{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 33.3%;
+                height: 212rem / @base;
+                // background-color: pink;
+                img{
+                    width: 147rem / @base; 
+                    height: 160rem / @base; 
+                }
+                p{
+                    font-size: 22rem / @base;
+                    color: #878787;
+                }
+            }
+        }
+    }
+}

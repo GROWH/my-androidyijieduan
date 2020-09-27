@@ -1,0 +1,329 @@
+@charset "utf-8";
+@import "public.css";
+header {
+  display: flex;
+  height: 0.85rem;
+  background-color: white;
+  padding: 0.43rem 0.23rem 0 0.24rem;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo a {
+  display: block;
+  background: url("../img/index_images/logo.jpg") no-repeat;
+  width: 1.47rem;
+  height: 0.33rem;
+  text-indent: -99.99rem;
+  overflow: hidden;
+  background-size: 1.47rem 0.33rem;
+}
+header .search input {
+  width: 3.05rem;
+  height: 0.39rem;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 3%;
+}
+header .set {
+  width: 0.55rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .set span {
+  width: 0.12rem;
+  height: 0.12rem;
+  background-color: #010101;
+  border-radius: 50%;
+}
+
+/* 导航条 */
+nav {
+  height: 0.76rem;
+  width: 7.5rem;
+  border-top: 1px solid #ccc;
+  background-color: white;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #1d1d1d;
+}
+nav ul li {
+  height: 0.76rem;
+}
+nav ul li img {
+  vertical-align: middle;
+  width: 0.35rem;
+  height: 0.21rem;
+}
+nav ul li:hover {
+  border-bottom: 0.05rem solid #ff0039;
+  color: #ff0039;
+}
+
+/* 轮播图 */
+.banner {
+  height: 2.9rem;
+  background: url("../img/index_images/banner.jpg") no-repeat;
+  background-size: 7.9rem 2.9rem;
+}
+/* 限时抢购 */
+.xianshi {
+  height: 1.8rem;
+  background-color: white;
+}
+.xianshi ul {
+  height: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.xianshi ul li {
+  width: 20%;
+  height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.xianshi ul li img {
+  width: 0.64rem;
+  height: 0.62rem;
+  background-size: 0.64rem 0.62rem;
+}
+.xianshi ul li p {
+  margin-top: 0.18rem;
+  font-size: 0.26rem;
+  color: #666;
+}
+
+
+.miaosha {
+  margin: 0.3rem 0;
+  background-color: white;
+  padding-top: 0.15rem;
+  display: flex;
+}
+.miaosha .miaosha_left {
+  position: relative;
+  width: 3.78rem;
+  height: 3.65rem;
+  border-right: 1px solid #ccc;
+  padding-left: 0.2rem;
+}
+.miaosha .miaosha_left p {
+  font-size: 0.3rem;
+}
+.miaosha .miaosha_left p:first-child {
+  font-size: 0.28rem;
+  color: #fd3b91;
+}
+.miaosha .miaosha_left p:nth-child(2) {
+  font-size: 0.22rem;
+  color: #828282;
+  margin: 0.1rem 0;
+}
+.miaosha .miaosha_left span {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background-color: black;
+  border-radius: 0.05rem;
+  font-size: 0.2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.08rem;
+}
+.miaosha .miaosha_left span:last-child {
+  width: 0.96rem;
+  height: 0.4rem;
+  background: url("../img/index_images/bg.jpg") no-repeat;
+  background-size: 0.96rem 0.4rem;
+  font-size: 0.24rem;
+  color: black;
+  margin-left: 0.1rem;
+}
+.miaosha .miaosha_left p > img {
+  width: 0.33rem;
+  height: 0.31rem;
+}
+.miaosha .miaosha_left .tu {
+  width: 2.36rem;
+  height: 2rem;
+  margin-top: 0.2rem;
+  margin-left: 0.6rem;
+}
+.miaosha .miaosha_left .tu > img {
+  width: 2.36rem;
+  height: 2rem;
+}
+.miaosha .miaosha_left b {
+  position: absolute;
+  right: 0.3rem;
+  bottom: 0.3rem;
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  line-height: 0.85rem;
+  text-align: center;
+  background-color: #ff327a;
+  border-radius: 50%;
+  font-size: 0.22rem;
+  color: white;
+}
+.miaosha .miaosha_right {
+  width: 3.72rem;
+  height: 3.65rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.miaosha .miaosha_right .con {
+  width: 44%;
+  height: 50%;
+  padding-left: 0.2rem;
+}
+.miaosha .miaosha_right .con span {
+  display: inline-block;
+  width: 0.33rem;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  text-align: center;
+  background-color: #fd3b91;
+  font-size: 0.18rem;
+  color: white;
+  margin-left: 0.1rem;
+}
+.miaosha .miaosha_right .con p:first-child {
+  font-size: 0.28rem;
+  color: #fd3b91;
+}
+.miaosha .miaosha_right .con p:nth-child(2) {
+  font-size: 0.22rem;
+  color: #828282;
+  margin: 0.1rem 0;
+}
+.miaosha .miaosha_right .con .im1 {
+  width: 0.93rem;
+  height: 0.32rem;
+  margin-top: 0.2rem;
+}
+.miaosha .miaosha_right .con .im2 {
+  display: block;
+  width: 1.28rem;
+  height: 1.78rem;
+  margin: 0 auto;
+}
+.miaosha .miaosha_right .con .im3 {
+  display: block;
+  width: 0.64rem;
+  height: 1.02rem;
+  margin: 0 auto;
+}
+.miaosha .miaosha_right .con .im4 {
+  display: block;
+  width: 1.04rem;
+  height: 0.88rem;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+}
+.miaosha .miaosha_right .c1,
+.miaosha .miaosha_right .c2 {
+  border-bottom: 0.01rem solid #ccc;
+}
+.miaosha .miaosha_right .c3 {
+  border-right: 0.01rem solid #ccc;
+}
+
+
+.bar {
+  margin-bottom: 0.3rem;
+}
+.bar img {
+  width: 7.5rem;
+  height: 1.9rem;
+}
+
+
+.content {
+  height: 11.02rem;
+  background-color: white;
+  border-bottom: 0.01rem solid #ccc;
+}
+.content .remen {
+  width: 7.1rem;
+  padding: 0.2rem 0;
+  margin: 0 auto;
+}
+.content .remen ul {
+  display: flex;
+  justify-content: center;
+  height: 0.68rem;
+}
+.content .remen ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 0.68rem;
+  border: 0.01rem solid #ccc;
+  font-size: 0.26rem;
+  color: #0f0f0f;
+}
+.content .remen ul li:hover {
+  color: white;
+  background-color: #f26b11;
+  border: none;
+}
+.content .list {
+  display: flex;
+  align-items: center;
+  width: 7.1rem;
+  height: 3rem;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  box-shadow: 0rem 0rem 0.1rem #ccc;
+}
+.content .list .li_left {
+  width: 2.9rem;
+  height: 3rem;
+}
+.content .list .li_left img {
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+  width: 2.16rem;
+  height: 2.2rem;
+}
+.content .list .li_right {
+  width: 4.2rem;
+  height: 3rem;
+  line-height: 0.7rem;
+}
+.content .list p:first-child {
+  font-size: 0.3rem;
+  color: #272727;
+  margin-top: 0.1rem;
+}
+.content .list p:nth-child(2) {
+  font-size: 0.24rem;
+  color: #c82c2d;
+}
+.content .list p:nth-child(3) {
+  font-size: 0.22rem;
+  color: #929292;
+}
+.content .list p:nth-child(4) {
+  width: 1.64rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  background-color: #f26b11;
+  text-align: center;
+  border-radius: 4%;
+  font-size: 0.24rem;
+  color: white;
+}
